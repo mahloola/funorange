@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <div style="background-image: url(deepsea.jpg)"> 
+<head>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>funorange</title>
+</head>
+<body>
+    <div id="header">
+        <center><h1 class="grey-box">funorange</h1></center>
+    </div>
+    <div id="menu">
+        <ul class="menu_ul">
+            <li class="menu_li"><a href='Home.html'>home</a></li>
+            <li class="menu_li"><a href='Products.html'>products</a></li>
+        </ul>
+    </div>
+    <div id="body">
+        <center>CONTENT</center>
+        <div id="sub_menu" class="boxed">
+            <a href='keypads.html'>keypads</a><br>
+            <a href='keyboards.html'>keyboards</a><br>
+            <a href='custom pcb.html'>custom pcb</a><br>
+            <a href='microcontrollers.html'>microcontrollers</a><br>
+        </div>
+    </div>
+    <div id="footer">
+        funorange© 2020
+    </div>
+</body>
+
+<style>
+    
+    #header{
+        min-height: 100px;
+    }
+    #menu {
+        min-height: 40px;
+    }
+    #body {
+        min-height: 400px;
+        margin-top: 3%;
+    }
+    #footer {
+        min-height: 100px;
+        margin-top: 3%;
+        text-align:center;
+    }
+    #header, #menu, #body, #footer {
+        background-image: url(light-blue-polygon-background.jpg);
+        margin-left: 10%;
+        margin-right: 10%;
+        box-shadow: 3px 5px 7px #000000;
+        border: 1px solid black;
+        font-family:sans-serif;
+        text-shadow: 0.5px 0.5px #000000;
+    }
+    #sub_menu {
+        width: 10%;
+        min-height: 350px;
+        background-color: #effcc0;
+        padding: 1%;
+        vertical-align: top;
+    }
+    #sub_menu, #content {
+        display: inline-block;
+    }
+
+     /* Horizontal Menu */
+    .menu_ul {
+        list-style-type: none;
+        overflow: hidden;
+    }
+    .menu_li {
+        float: left;
+        padding-left: 18px;
+        border: none;
+        padding-top: 8px;
+        padding-bottom: 4px;
+    }
+    .grey-box {
+        background-image: url("grey-bg.jpg");
+        width: 200px;
+        border-style:dashed;
+    }
+    #content {
+        width: 70%;
+        margin-left: 1%;
+    }
+    /* VIEWPORTS USED FOR RESPONSIVE WEB DESIGN */
+    @viewport{
+        zoom: 1.0;
+        width: extend-to-zoom;
+    }
+    @-ms-viewport{
+        width: extend-to-zoom;
+        zoom: 1.0;
+    }
+    @media screen and (max-width: 600px) { /* ALL SCREENS BELOW 600 PIXELS */
+        body a{
+            font-size: 30px;
+            font-weight: bold;
+        } /* MAKE LINKS BIGGER FOR TOUCHSCREEN */
+        #sub_menu {
+            min-height: initial;
+            min-height: auto; /* for internet explorer */
+            font-size: 25px;
+            margin-bottom: 2%;
+        }
+        #content, #sub_menu{
+            display: block;
+            width: 95%;
+        }
+    }
+</style>
+</html>
